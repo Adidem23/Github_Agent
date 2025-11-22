@@ -114,7 +114,7 @@ export default function ChatDashboard() {
         url: url,
         headers: {
           'Content-Type': 'application/json',
-          'api-key': ''
+          'api-key': `${import.meta.env.MURF_AI_FALCON_API_KEY}`
         },
         data: data,
         responseType: 'arraybuffer' 
